@@ -566,7 +566,9 @@ li:hover .overlay-text {
   margin-left: 16px;
 }
 
-.backdrop {
+/*  modal */
+
+.container-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -592,7 +594,7 @@ li:hover .overlay-text {
   padding: 72px 24px 24px 24px;
 }
 
-.button-close {
+.button-modal {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -610,14 +612,13 @@ li:hover .overlay-text {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-close:hover,
-.button-close:focus {
+.button-modal:hover,
+.button-modal:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
 }
 
-.icon-modal {
+.modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -631,11 +632,11 @@ li:hover .overlay-text {
   margin-bottom: 16px;
 }
 
-.line-input {
+.line-contact {
   margin-bottom: 8px;
 }
 
-.input-form {
+.label-name {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -644,7 +645,11 @@ li:hover .overlay-text {
   margin-bottom: 4px;
 }
 
-.input-form-icon {
+.input-icon {
+  position: relative;
+}
+
+.input-icon-name {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -655,12 +660,12 @@ li:hover .overlay-text {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-form-icon:focus {
+.input-icon-name:focus {
   border-color: #4d5ae5;
   fill: #4d5ae5;
 }
 
-.form-icon {
+.icon-name {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -668,11 +673,11 @@ li:hover .overlay-text {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-text {
+.comment {
   margin-bottom: 16px;
 }
 
-.textarea-form {
+.textarea-cmment {
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -688,24 +693,24 @@ li:hover .overlay-text {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-form:focus {
+.textarea-cmment:focus {
   border-color: #4d5ae5;
 }
 
 /* 5div*/
 
-.container-checkbox {
+.checkbox-field {
   margin-bottom: 24px;
 }
 
-.label-checkbox {
+.label-privacy {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-.checkbox-user {
+.custom-privacy {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -717,21 +722,20 @@ li:hover .overlay-text {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  fill: #f4f4fd;
 }
 
-.input-checkbox:checked + .label-checkbox > .checkbox-user {
+.input-checkbox:checked + .label-privacy > .custom-privacy {
   color: #4d5ae5;
   fill: #f4f4fd;
   border: none;
 }
 
-.checkbox-link {
+.privacy-link {
   text-decoration: underline;
   color: #4d5ae5;
 }
 
-.button-sent {
+.button-send {
   display: block;
   min-width: 169px;
   height: 56px;
@@ -748,6 +752,7 @@ li:hover .overlay-text {
   border-radius: 4px;
   padding: 16px 32px;
   margin: 0 auto;
+  margin-top: 24px;
 }
 
 .backdrop.is-open {

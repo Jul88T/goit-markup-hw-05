@@ -616,6 +616,7 @@ li:hover .overlay-text {
 .button-modal:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .modal-icon {

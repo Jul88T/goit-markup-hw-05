@@ -509,7 +509,7 @@ li:hover .overlay-text {
 /* subscribe */
 
 .subscribe {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .subscribe-title {
@@ -540,8 +540,13 @@ li:hover .overlay-text {
   color: #ffffff;
 }
 
-.placeholder {
-  color: #ffffff;
+.email-contact::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 16px 8px 8px 0;
 }
 
 .button-submit {
@@ -562,13 +567,19 @@ li:hover .overlay-text {
   border-radius: 4px;
 }
 
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #31d0aa;
+}
+
 .button-icon {
   margin-left: 16px;
+  fill: #f4f4fd;
 }
 
 /*  modal */
 
-.container-modal {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -577,6 +588,20 @@ li:hover .overlay-text {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -100%);
 }
 
 .modal {
@@ -723,6 +748,7 @@ li:hover .overlay-text {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin: 8px;
 }
 
 .input-checkbox:checked + .label-privacy > .custom-privacy {
@@ -735,6 +761,8 @@ li:hover .overlay-text {
   text-decoration: underline;
   color: #4d5ae5;
 }
+
+/* form button-send*/
 
 .button-send {
   display: block;
@@ -756,21 +784,7 @@ li:hover .overlay-text {
   margin-top: 24px;
 }
 
-.backdrop.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.backdrop:not(.is-open) .modal {
-  transform: translate(-50%, -100%);
-}
-
-.line-form-icon {
-  position: relative;
-}
-
-.form-icon:hover,
-.form-icon:focus {
-  fill: #4d5ae5;
+.button-send:hover,
+.button-send:focus {
+  background-color: #404bbf;
 }

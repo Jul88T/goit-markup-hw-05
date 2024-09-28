@@ -729,14 +729,14 @@ li:hover .overlay-text {
   margin-bottom: 24px;
 }
 
-.label-privacy {
+.label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-.custom-privacy {
+.custom-checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -751,7 +751,7 @@ li:hover .overlay-text {
   margin: 8px;
 }
 
-.input-checkbox:checked + .label-privacy > .custom-privacy {
+.checkbox:checked + .label > .custom-checkbox {
   color: #4d5ae5;
   fill: #f4f4fd;
   border: none;
@@ -760,6 +760,7 @@ li:hover .overlay-text {
 .privacy-link {
   text-decoration: underline;
   color: #4d5ae5;
+  margin: 2px;
 }
 
 /* form button-send*/

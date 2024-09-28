@@ -756,9 +756,9 @@ li:hover .overlay-text {
 }
 
 .checkbox:checked + .label > .custom-checkbox {
-  color: #4d5ae5;
   fill: #f4f4fd;
   border: none;
+  background-color: #404bbf;
 }
 
 .privacy-link {

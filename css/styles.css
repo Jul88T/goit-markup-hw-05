@@ -660,7 +660,14 @@ li:hover .overlay-text {
   fill: #f4f4fd;
 }
 
+.input-checkbox:checked + .label-checkbox > .checkbox-user {
+  color: #4d5ae5;
+  fill: #f4f4fd;
+  border: none;
+}
+
 .checkbox-link {
+  text-decoration: underline;
   color: #4d5ae5;
 }
 

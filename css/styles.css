@@ -752,7 +752,7 @@ li:hover .overlay-text {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  margin: 8px;
+  margin-right: 8px;
 }
 
 .checkbox:checked + .label > .custom-checkbox {
